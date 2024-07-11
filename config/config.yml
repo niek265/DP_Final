@@ -1,0 +1,20 @@
+# Required optoins:
+
+# Directory where the data is stored, this is also where the additional genome files will generate
+data_directory: /home/nieks/DataspellProjects/DP2_Final/data
+# Directory where the results will be stored
+results_directory: results
+# Name of the reads file, the files must be paired-end and have the same name with the only difference being the _1 and _2
+read_files_name: dummy_reads
+# Name of the reference genome file, this file must be in the data directory
+reference_genome: dummy_genome.fna
+# Name of the barcode file, this file must be in the data directory
+barcode_file: barcodes.txt
+
+
+# Optional trimming options:
+
+# Discard reads that became shorter than length INT because of either
+# quality or adapter trimming. A value of '0' effectively disables
+# this behaviour.
+trim_galore_min_length: 0

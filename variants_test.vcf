@@ -1,0 +1,29 @@
+##fileformat=VCFv4.0
+##fileDate=20090805
+##source=myImputationProgramV3.1
+##reference=1000GenomesPilot-NCBI36
+##phasing=partial
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of Samples With Data">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##INFO=<ID=AF,Number=.,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AA,Number=1,Type=String,Description="Ancestral Allele">
+##INFO=<ID=DB,Number=0,Type=Flag,Description="dbSNP membership, build 129">
+##INFO=<ID=H2,Number=0,Type=Flag,Description="HapMap2 membership">
+##FILTER=<ID=q10,Description="Quality below 10">
+##FILTER=<ID=s50,Description="Less than 50% of samples have data">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FORMAT=<ID=HQ,Number=2,Type=Integer,Description="Haplotype Quality">
+#CHROM POS     ID        REF ALT    QUAL FILTER INFO                              FORMAT      NA00001        NA00002        NA00003
+20     14370   rs6054257 G      A       29   PASS   NS=3;DP=14;AF=0.5;DB;H2           GT:GQ:DP:HQ 0|0:48:1:51,51 1|0:48:8:51,51 1/1:43:5:.,.
+20     17330   .         T      A       3    q10    NS=3;DP=11;AF=0.017               GT:GQ:DP:HQ 0|0:49:3:58,50 0|1:3:5:65,3   0/0:41:3
+20     1110696 rs6040355 A      G,T     67   PASS   NS=2;DP=10;AF=0.333,0.667;AA=T;DB GT:GQ:DP:HQ 1|2:21:6:23,27 2|1:2:0:18,2   2/2:35:4
+20     1230237 .         T      .       47   PASS   NS=3;DP=13;AA=T                   GT:GQ:DP:HQ 0|0:54:7:56,60 0|0:48:4:51,51 0/0:61:2
+20     1234567 microsat1 GTCT   G,GTACT 50   PASS   NS=3;DP=9;AA=G                    GT:GQ:DP    0/1:35:4       0/2:17:2       1/1:40:3
+20     2233445 rs9876543 C      T       15   q10    NS=3;DP=12;AF=0.083               GT:GQ:DP:HQ 0|1:20:5:40,25 1|1:10:3:30,10 0|0:15:4:50,35
+20     3344556 rs1234567 A      C       60   PASS   NS=3;DP=14;AF=0.25;AA=A;DB        GT:GQ:DP:HQ 0|0:45:7:55,55 0|1:50:8:60,60 1|1:38:6:48,48
+20     4455667 .         G      A       80   PASS   NS=2;DP=16;AF=0.5                 GT:GQ:DP:HQ 1|1:70:10:70,70 0|1:60:6:60,60 0|0:50:5:50,50
+20     5566778 rs2233445 T      G       22   q10    NS=3;DP=15;AF=0.167               GT:GQ:DP:HQ 0|0:30:6:40,30 0|0:40:7:50,40 0|1:35:8:45,35
+20     6677889 .         C      T,G     72   PASS   NS=3;DP=18;AF=0.333,0.167;AA=C    GT:GQ:DP:HQ 1|2:55:9:65,55 2|1:40:8:55,45 1|1:60:7:70,60
+20     7788990 rs3344556 A      T       38   q10    NS=3;DP=11;AF=0.25;AA=A           GT:GQ:DP:HQ 0|1:25:6:35,25 1|0:20:4:30,20 0|0:15:5:25,15

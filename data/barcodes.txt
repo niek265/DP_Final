@@ -1,0 +1,2 @@
+ATCG Sample1_R1.fastq Sample1_R2.fastq
+CGAT Sample4_R1.fastq Sample4_R2.fastq

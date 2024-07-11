@@ -1,0 +1,33 @@
+# Configuration file
+configfile: "config/config.yml"
+
+# Global variables
+data_dir = config["data_directory"]
+results_dir = config["results_directory"]
+read_name = config["read_files_name"]
+genome = config["reference_genome"]
+barcode_file = config["barcode_file"]
+
+# Include rules from external files
+rule_files = [
+    "rules/0.common.smk",
+    "rules/1.demultiplex.smk",
+    "rules/2a.trim.smk",
+    "rules/2b.index_genome.smk",
+    "rules/3.map_reads.smk",
+    "rules/4.add_read_groups.smk",
+    "rules/5a.index_bam.smk",
+    "rules/5b.index_reference.smk",
+    "rules/5c.create_sequence_dict.smk",
+    "rules/6.call_variants.smk",
+    "rules/7.plot_variants.smk"
+]
+
+for rule_file in rule_files:
+    include: rule_file
+
+# Define the final target rule
+rule all:
+    input:
+        "results/variants.vcf",
+        "results/variants_plot.png"
