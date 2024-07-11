@@ -1,6 +1,7 @@
 # Fast-GBS Pipeline
 
 This repository contains a Snakemake pipeline for the Data Processing course.
+It implements the pipeline from this article: [https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-016-1431-9.pdf](https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-016-1431-9.pdf)
 
 The pipeline works in the following order:
 1. Demultiplexing sequencing data using Sabre
